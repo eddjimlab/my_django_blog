@@ -25,7 +25,8 @@ SECRET_KEY = 'y%fs-22vt4y+krzt5-!^khz1!=^h(vf84=-%1nf4o+*-u8wsjn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com',
+                 'Eduard67.mysql.pythonanywhere-services.com']
 
 
 # Application definition
@@ -86,7 +87,18 @@ DATABASES = {
         'TEST': {
             'NAME': 'tests'
         }
-    }
+    },
+    'production': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'Eduard67$DjangoBlog',
+        'USER': 'Eduard67',
+        'PASSWORD': 'admin123',
+        'HOST': 'Eduard67.mysql.pythonanywhere-services.com',
+        'TEST': {
+            'NAME': 'Eduard67$DjangoBlog'
+        }
+    },
+
 }
 
 
