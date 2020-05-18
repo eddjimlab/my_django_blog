@@ -1,0 +1,8 @@
+*.рус
+*.~
+__pycache__
+myvenv
+/static
+.DS_Store
+.vscode
+.gitigonre

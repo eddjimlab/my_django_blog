@@ -1,0 +1,9 @@
+li a {
+  color: blue;
+  font-size: 2rem;
+}
+
+body {
+  background: red url("images/back.jpg") no-repeat;
+  opacity: .5;
+}
