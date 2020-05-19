@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'y%fs-22vt4y+krzt5-!^khz1!=^h(vf84=-%1nf4o+*-u8wsjn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com',
+ALLOWED_HOSTS = ['.pythonanywhere.com',
                  'Eduard67.mysql.pythonanywhere-services.com']
 
 
@@ -77,17 +77,6 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'DjangoBlog',
-    #     'USER': 'admin123',
-    #     'PASSWORD': 'admin123',
-    #     'HOST': 'localhost',
-    #     'PORT': '',
-    #     'TEST': {
-    #         'NAME': 'tests'
-    #     }
-    # },
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'Eduard67$DjangoBlog',
@@ -95,7 +84,7 @@ DATABASES = {
         'PASSWORD': 'admin123',
         'HOST': 'Eduard67.mysql.pythonanywhere-services.com',
         'TEST': {
-            'NAME': 'Eduard67$DjangoBlog'
+                'NAME': 'Eduard67$DjangoBlog'
         }
     },
 
